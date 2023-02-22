@@ -8,11 +8,11 @@
 
 This app might be running [here](https://an-encouraging-word.fly.dev/).
 
-This is mostly an example app wherein I get to play with deploying a Flask application. It is tiny, but uses a Dockerized gunicorn insatnce to serve the app thereby making it trivial to deploy. The _Dockerfile_ and _run-prod.sh_ files are likely of the greatest interest in this repo.
+This is mostly an example app wherein I get to play with deploying a Flask application. It is tiny, but uses a Dockerized gunicorn instance to serve the app thereby making it trivial to deploy. The _Dockerfile_ and _run-prod.sh_ files are likely of the greatest interest in this repo.
 
 ## Why make this?
 
-Because WSGI + Docker is a puzzler for me!
+Because WSGI + Docker + Deployments is an area I often need a simple lab set up for!
 
 ## How do I use this
 
@@ -35,9 +35,13 @@ __PROD CONTAINER__
 
 - `sh run-prod-container.sh`
 
+__DEPLOY IMAGE TO PROD__
+
+- `sh run-deploy.sh`
+
 ## Resources
 
-Some links I used while making this. Be aware the extent to which I used these items is not documented and a great deal of the works was done "by me" and by that I mean I looked at all or part of the resources listed and used some amount typically not all of the resource in question, but enopugh to want to credit the author with putting me on the right track. 
+Some links I used while making this. Be aware the extent to which I used these items is not documented and a great deal of the works was done "by me" and by that I mean I looked at all or part of the resources listed and used some amount typically not all of the resource in question, but enough to want to credit the author with putting me on the right track. 
 
 - https://www.freecodecamp.org/news/how-to-dockerize-a-flask-app/
 - https://gunicorn.org/
