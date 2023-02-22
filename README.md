@@ -6,6 +6,8 @@
 
 ## What is this?
 
+This app might be running [here](https://an-encouraging-word.fly.dev/).
+
 This is mostly an example app wherein I get to play with deploying a Flask application. It is tiny, but uses a Dockerized gunicorn insatnce to serve the app thereby making it trivial to deploy. The _Dockerfile_ and _run-prod.sh_ files are likely of the greatest interest in this repo.
 
 ## Why make this?
