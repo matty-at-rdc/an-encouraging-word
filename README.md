@@ -1,5 +1,4 @@
 # An Encouraging Word
-### For Everyone Except People Named Lane
 
 <p align="center">
   <img width="460" height="320" src="./meta/demo.png">
@@ -11,7 +10,7 @@ This is mostly an example app wherein I get to play with deploying a Flask appli
 
 ## Why make this?
 
-Beciase WSGI + Docker is a puzzler for me!
+Because WSGI + Docker is a puzzler for me!
 
 ## How do I use this
 
@@ -36,7 +35,7 @@ __PROD CONTAINER__
 
 ## Resources
 
-Some links I used while miaking this. Be aware thes extent to which I used these items is not documented and a great deal of the works was done "by me" and by that I mean I looked at all or part of the resources listed and used some amount typically not all of the resource in question, but enopugh to want to credit the author with putting me on the right track. 
+Some links I used while making this. Be aware the extent to which I used these items is not documented and a great deal of the works was done "by me" and by that I mean I looked at all or part of the resources listed and used some amount typically not all of the resource in question, but enopugh to want to credit the author with putting me on the right track. 
 
 - https://www.freecodecamp.org/news/how-to-dockerize-a-flask-app/
 - https://gunicorn.org/
@@ -55,3 +54,7 @@ Ideas I am toying with for this project!
 - https://www.youtube.com/watch?v=5uhIiI9Ld5M
 - https://learneleventyfromscratch.com/lesson/31.html#testing-our-production-task
 - https://www.11ty.dev/
+
+## Caveats 
+
+- This project does __not__ work for individuals named "Lane"
