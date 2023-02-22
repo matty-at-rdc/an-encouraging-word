@@ -5,7 +5,9 @@ def create_app():
     app = Flask(__name__)
 
     @app.route('/')
-    def index():
-        return render_template("index.html")
+    @app.route('/<name>')
+    def index(name=None):
+        name = str(name).capitalize() if isinstance(name, str) else None
+        return render_template("index.html", name=name)
 
     return app

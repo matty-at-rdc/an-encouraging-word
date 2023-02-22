@@ -4,35 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
     <title>Believe</title>
-
-    <style>
-        body {
-            background-color: blanchedalmond;
-            color: brown;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            padding: 3rem 1rem;
-        }
-
-        h1 {
-            font-size: 4rem;
-            font-weight: 500;
-        }
-
-        .heavy {
-            font-weight: 800;
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <h1>I <span class="heavy">believe</span> in you</h1>
+        {% if "Lane" in name %}
+        <h1>I <span class="heavy">do not believe</span> in you, {{name}}.</h1>
+        {% elif name %}
+        <h1>I <span class="heavy">believe</span> in you, {{name}}.</h1>
+        {% else %}
+        <h1>I <span class="heavy">believe</span> in you.</h1>
+        {% endif %}
+
+        {% if "Lane" in name %}
+        <h1>🖕</h1>
+        {% else %}
+        <h1>🕊</h1>
+        {% endif %}
+
     </div>
 </body>
 </html>

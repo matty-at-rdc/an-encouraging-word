@@ -1,2 +1,1 @@
-docker build --tag an-encouraging-word .
-docker run -itd -p 4545:4545 an-encouraging-word
+gunicorn  -w 3  -t 2 --access-logfile - 'an_encouraging_word:create_app()' --timeout 90 --bind 0.0.0.0:4545

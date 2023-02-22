@@ -1,0 +1,23 @@
+body {
+    background-color: blanchedalmond;
+    color: brown;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.heavy {
+    font-weight: 800;
+    text-decoration: underline;
+}
