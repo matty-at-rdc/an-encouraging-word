@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        {% if "Lane" in name %}
+        {% if (name and ("Lane" in name or "lane" in name)) %}
         <h1>I <span class="heavy">do not believe</span> in you, {{name}}.</h1>
         {% elif name %}
         <h1>I <span class="heavy">believe</span> in you, {{name}}.</h1>
@@ -17,12 +17,11 @@
         <h1>I <span class="heavy">believe</span> in you.</h1>
         {% endif %}
 
-        {% if "Lane" in name %}
+        {% if (name and ("Lane" in name or "lane" in name)) %}
         <h1>🖕</h1>
         {% else %}
         <h1>🕊</h1>
         {% endif %}
-
     </div>
 </body>
 </html>
